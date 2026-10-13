@@ -6,11 +6,11 @@ type EducationProps = {
 
 const Education = ({ education }: EducationProps) => {
   return (
-    <section id="education">
+    <section id="education" className="portfolio-section portfolio-section-education">
       <div className="container portfolio-container">
         <div className="panel-frame">
           <div className="section-content">
-            <p className="section-heading section-heading-spaced">Education</p>
+            <p className="section-heading section-heading-spaced"><span className="section-heading-number">04</span> Education</p>
 
             <div className="education-timeline">
               {education.map((item) => (

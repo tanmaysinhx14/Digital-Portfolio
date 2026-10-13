@@ -9,7 +9,7 @@ type HeroSectionProps = {
 
 const HeroSection = ({ hero }: HeroSectionProps) => {
   return (
-    <section id="top">
+    <section id="top" className="portfolio-hero-section">
       <div className="container portfolio-container">
         <div className="hero-banner">
           <Image
@@ -36,10 +36,11 @@ const HeroSection = ({ hero }: HeroSectionProps) => {
             <div className="row mt-1 g-4 align-items-start justify-content-between">
               <div className="col-12 col-lg-7">
                 <div className="d-flex flex-column gap-4 align-items-center align-items-sm-start text-center text-sm-start">
+                  <span className="hero-eyebrow">Portfolio / Systems &amp; product</span>
                   <span className="availability-pill">{hero.availability}</span>
 
                   <div className="d-flex flex-column gap-3">
-                    <h1 className="mb-0">{hero.name}</h1>
+                    <h1 className="mb-0 hero-name">{hero.name}</h1>
                     <p className="mb-0 hero-summary">{hero.summary}</p>
                   </div>
 
@@ -79,10 +80,10 @@ const HeroSection = ({ hero }: HeroSectionProps) => {
               </div>
 
               <div className="col-12 col-lg-4">
-                <div className="d-flex flex-column gap-3 align-items-center align-items-lg-end">
-                  <p className="subcontent-heading mt-5">Profiles</p>
+                <div className="hero-profile-card d-flex flex-column gap-3 align-items-center">
+                  <p className="subcontent-heading">Profiles</p>
 
-                  <div className="d-flex flex-wrap justify-content-center justify-content-lg-end gap-3 p-0">
+                  <div className="d-flex flex-wrap justify-content-center gap-3 p-0">
                     {hero.socialLinks.map((item) => (
                       <Link
                         key={`${item.label}-${item.href}`}

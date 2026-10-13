@@ -8,14 +8,15 @@ type FeaturedWorkProps = {
 
 const FeaturedWork = ({ projects }: FeaturedWorkProps) => {
   return (
-    <section id="work">
+    <section id="work" className="portfolio-section portfolio-section-work">
       <div className="container portfolio-container">
         <div className="panel-frame">
           <div className="section-content d-flex flex-column gap-3">
-            <p className="section-heading">Featured Work</p>
+            <p className="section-heading"><span className="section-heading-number">02</span> Featured Work</p>
             <h2 className="mb-0 featured-work-title">
               A few projects that show how I think about systems, usability, and implementation.
             </h2>
+            <p className="section-deck">Selected builds, from role-aware web products to real-time vision systems.</p>
           </div>
 
           <div className="work-grid p-3">
@@ -24,7 +25,7 @@ const FeaturedWork = ({ projects }: FeaturedWorkProps) => {
                 const projectHref = value.link || "#";
 
                 return (
-                  <div key={value.title} className="col-12 col-md-6">
+                <div key={value.title} className="col-12 col-md-6">
                     <div className="work-card h-100 d-flex flex-column gap-4">
                       <Link
                         href={projectHref}
@@ -84,6 +85,12 @@ const FeaturedWork = ({ projects }: FeaturedWorkProps) => {
                             </span>
                           ))}
                         </div>
+                        {value.title.toLowerCase().includes("academic erp") && (
+                          <Link href="/blogs/academic-erp" className="project-notes-link">Read the project note <span aria-hidden="true">↗</span></Link>
+                        )}
+                        {value.title.toLowerCase().includes("aiproctor") && (
+                          <Link href="/blogs/building-ai-proctor" className="project-notes-link">Read the project note <span aria-hidden="true">↗</span></Link>
+                        )}
                       </div>
                     </div>
                   </div>

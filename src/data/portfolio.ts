@@ -88,7 +88,7 @@ export const heroData: HeroData = {
   socialLinks: [
     {
       icon: "/images/icon/github-icon.svg",
-      href: "https://github.com/tanmaysinhx-14",
+      href: "https://github.com/tanmaysinhx14",
       label: "GitHub",
     },
     {
@@ -113,16 +113,28 @@ export const aboutData: AboutData = {
     "Recent projects have pushed me toward real-time monitoring systems, smarter automation, and interfaces that make technical tools easier for people to trust and adopt.",
   activeDomains: [
     { title: "DSA Foundations" },
-    { title: "TypeScript-Based Web Applications" },
+    { title: "Systems Design" },
+    { title: "Computer Vision" },
+    { title: "Hackathons" },
 
   ],
   coreExpertise: [
     { title: "UI/UX using Bootstrap 5" },
-    { title: "PHP + MySQL Web Application Development" },
+    { title: "PHP" },
+    { title: "MySQL" },
+    { title: "Web Application Development" }
   ],
 };
 
 export const featuredWork: FeaturedWorkItem[] = [
+    {
+    title: "Civic Connect",
+    description:
+      "Designed and developed a multi-role Academic ERP system handling admin, faculty, and student workflows across attendance tracking, batch management, and notification systems. Focused on reliability, input safety, and building workflows that mirror real institutional operations.",
+    link: "",
+    techStack: ["PHP", "MySQL", "Javascript"],
+    image: "/images/feature-work/academic-erp.png",
+  },
   {
     title: "Academic ERP",
     description:
@@ -130,22 +142,22 @@ export const featuredWork: FeaturedWorkItem[] = [
     link: "",
     techStack: ["PHP", "MySQL", "Javascript"],
     image: "/images/feature-work/academic-erp.png",
-    developmentStatus: "Under Development — Scruntized Preview Available Soon",
+    developmentStatus: "Scruntized Preview Available Soon",
   },
   {
     title: "AIProctor - Vision-Based Proctoring System",
     description:
       "Built a real-time exam monitoring workflow that turns webcam input into live risk signals through gaze tracking, object detection, and rule-based analysis. I handled the computer vision pipeline, backend orchestration, and monitoring logic.",
-    link: "https://github.com/tanmaysinhx-14/AIProctor",
+    link: "https://github.com/tanmaysinhx14/AIProctor",
     techStack: ["Python", "OpenCV", "PyTorch", "YOLO", "FastAPI"],
     image: "/images/feature-work/aiproctor.png",
   },
   {
-    title: "Career Institute Website",
+    title: "Career Institute's Website",
     description:
       "Designed and developed a conversion-focused institute website with clearer information hierarchy, responsive layouts, and a more polished Bootstrap-based front-end experience. The project emphasized presentation quality, speed, and trust-building design.",
-    link: "https://github.com/tanmaysinhx-14/career-institute",
-    techStack: ["Bootstrap 5", "UI Implementation", "Responsive Design"],
+    link: "https://github.com/tanmaysinhx14/career-institute",
+    techStack: ["Bootstrap 5", "UI/UX Implementation", "Responsive Design"],
     image: "/images/feature-work/ci.png",
   },
 ];
@@ -253,7 +265,7 @@ export const contactData: ContactData = {
     },
     {
       icon: "/images/icon/github-icon.svg",
-      href: "https://github.com/tanmaysinhx-14",
+      href: "https://github.com/tanmaysinhx14",
       label: "GitHub",
     },
     {
@@ -263,6 +275,24 @@ export const contactData: ContactData = {
     },
   ],
 };
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  date: string;
+  summary: string;
+  content: string;
+};
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "building-ai-proctor",
+    title: "Building an AI Proctoring System",
+    date: "October 12, 2026",
+    summary: "How I built a real-time exam monitoring workflow with OpenCV and PyTorch.",
+    content: "Detailed content goes here. For complex formatting, we can integrate MDX later."
+  }
+];
 
 export const footerData = {
   note: "Built with Next.js and Bootstrap. Deployed on Vercel.",

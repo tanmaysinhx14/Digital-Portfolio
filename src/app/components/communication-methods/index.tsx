@@ -9,14 +9,14 @@ type CommunicationMethodsProps = {
 
 const CommunicationMethods = ({ contact }: CommunicationMethodsProps) => {
   return (
-    <section id="contact">
+    <section id="contact" className="portfolio-section portfolio-section-contact">
       <div className="container portfolio-container">
         <div className="panel-frame">
           <div className="section-content">
             <div className="row g-4 align-items-start">
               <div className="col-12 col-lg-5">
                 <div className="d-flex flex-column gap-3">
-                  <p className="section-heading">Let&apos;s Connect</p>
+                  <p className="section-heading"><span className="section-heading-number">05</span> Let&apos;s Connect</p>
                   <h2 className="mb-0">{contact.heading}</h2>
                   <p className="contact-copy">{contact.description}</p>
 
