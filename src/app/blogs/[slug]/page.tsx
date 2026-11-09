@@ -173,7 +173,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 <span>{post.meta.date}</span>
                 <span>{post.meta.readTime ?? "5 min read"}</span>
               </div>
-              <h1>{post.meta.title}</h1>
+              <h3 className="blog-article-title">{post.meta.title}</h3>
               <p className="blog-article-deck">{post.meta.summary}</p>
               {post.meta.tags?.length ? (
                 <div className="blog-tag-row" aria-label="Topics">

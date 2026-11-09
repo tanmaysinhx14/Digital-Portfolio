@@ -33,12 +33,9 @@ const HeroSection = ({ hero }: HeroSectionProps) => {
               />
             </div>
 
-            <div className="row mt-1 g-4 align-items-start justify-content-between">
+            <div className="row mt-3 g-4 align-items-start justify-content-between">
               <div className="col-12 col-lg-7">
                 <div className="d-flex flex-column gap-4 align-items-center align-items-sm-start text-center text-sm-start">
-                  <span className="hero-eyebrow">Portfolio / Systems &amp; product</span>
-                  <span className="availability-pill">{hero.availability}</span>
-
                   <div className="d-flex flex-column gap-3">
                     <h1 className="mb-0 hero-name">{hero.name}</h1>
                     <p className="mb-0 hero-summary">{hero.summary}</p>
@@ -79,7 +76,8 @@ const HeroSection = ({ hero }: HeroSectionProps) => {
                 </div>
               </div>
 
-              <div className="col-12 col-lg-4">
+              <div className="d-flex row justify-content-center col-12 col-lg-5">
+                <span className="availability-pill">{hero.availability}</span>
                 <div className="hero-profile-card d-flex flex-column gap-3 align-items-center">
                   <p className="subcontent-heading">Profiles</p>
 

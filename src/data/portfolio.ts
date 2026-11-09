@@ -142,7 +142,6 @@ export const featuredWork: FeaturedWorkItem[] = [
     link: "",
     techStack: ["PHP", "MySQL", "Javascript"],
     image: "/images/feature-work/academic-erp.png",
-    developmentStatus: "Scruntized Preview Available Soon",
   },
   {
     title: "AIProctor - Vision-Based Proctoring System",
@@ -273,6 +272,11 @@ export const contactData: ContactData = {
       href: "https://leetcode.com/u/tanmaysinhx14/",
       label: "LeetCode",
     },
+    {
+      icon: "/images/icon/instagram-icon.svg",
+      href: "https://instagram.com/tanmaysinhx14",
+      label: "Instagram",
+    }
   ],
 };
 

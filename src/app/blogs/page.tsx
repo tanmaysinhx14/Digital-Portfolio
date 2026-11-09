@@ -23,9 +23,9 @@ export default function BlogList() {
           <header className="blog-index-header">
             <div className="blog-index-copy">
               <p className="blog-eyebrow"><span /> Field notes / 2026</p>
-              <h1 className="blog-index-title">Ideas become<br /><em>working systems.</em></h1>
+              <h4 className="blog-index-title">Ideas become<br /><em>working systems.</em></h4>
               <p className="blog-index-deck">
-                Build logs from the messy middle: the decisions, trade-offs, and small details behind the projects.
+                Build logs from the messy middle: the architectural decisions, trade-offs, and technical nuances behind each project. Hard-earned takeaways and post-mortems from everything I’ve built.
               </p>
             </div>
             <aside className="blog-index-aside" aria-label="About these articles">

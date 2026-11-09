@@ -226,9 +226,10 @@ h5 {
 }
 
 .site-brand-name {
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.045em;
 }
 
 .site-brand-copy {
@@ -282,6 +283,7 @@ h5 {
   align-items: center;
   gap: 0.45rem;
   padding: 0.45rem 0.8rem;
+  margin: 0 0 1.25rem 0;
   border: 1px solid var(--portfolio-border);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
@@ -289,6 +291,7 @@ h5 {
   font-size: 0.84rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+  width: fit-content;
 }
 
 .availability-pill::before {
@@ -1142,7 +1145,6 @@ h5 {
   padding-top: 5.25rem;
 }
 
-.portfolio-hero-section .hero-eyebrow,
 .experience-index {
   color: var(--portfolio-accent);
   font-size: 0.68rem;
@@ -1166,7 +1168,7 @@ h5 {
 }
 
 .portfolio-hero-section .hero-profile-card {
-  width: min(100%, 20rem);
+  width: min(100%, 17rem);
   padding: 1.25rem;
   border: 1px solid rgba(91, 60, 196, 0.12);
   border-radius: 1rem;
@@ -1219,7 +1221,7 @@ h5 {
 
 .portfolio-section-about .highlight-sweep {
   padding-inline: 0.08em;
-  background: linear-gradient(180deg, transparent 61%, rgba(91, 60, 196, 0.14) 61%);
+  background: linear-gradient(90deg, transparent 0%, rgba(91, 60, 196, 0.07) 20%, rgba(91, 60, 196, 0.14) 100%);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -1299,9 +1301,9 @@ h5 {
 }
 
 .portfolio-section-work .project-title-link h4 {
-  font-size: clamp(1.3rem, 2vw, 1.65rem);
-  font-weight: 600;
-  letter-spacing: -0.035em;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
 }
 
 .portfolio-section-work .project-title-link {
@@ -1455,7 +1457,7 @@ h5 {
 }
 
 .portfolio-section-contact .social-tile {
-  min-height: 4.2rem;
+  min-height: 2rem;
   border-radius: 0.85rem;
   box-shadow: none;
 }
@@ -1559,10 +1561,6 @@ h5 {
     font-size: clamp(2.6rem, 13vw, 3.4rem);
   }
 
-  .portfolio-hero-section .hero-eyebrow {
-    margin-top: 1.5rem;
-  }
-
   .portfolio-section-experience .experience-heading-row {
     gap: 1rem !important;
   }
@@ -1656,7 +1654,7 @@ h5 {
 
 .blog-index-title,
 .blog-card-title,
-.blog-article-hero h1,
+.blog-article-hero h3,
 .blog-content h2,
 .blog-content h3 {
   color: var(--blog-ink, #1c212b);
@@ -1668,7 +1666,7 @@ h5 {
 .blog-index-title {
   max-width: 54rem;
   margin: 0;
-  font-size: clamp(3.2rem, 7vw, 6.6rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   line-height: 0.94;
 }
 
@@ -1860,6 +1858,10 @@ h5 {
   padding: 0.42rem 0.7rem;
 }
 
+.blog-article-title {
+  font-size: min(5vw, 50px);
+}
+
 .blog-card-title {
   margin: 1.2rem 0 0.7rem;
   font-size: clamp(1.7rem, 2.6vw, 2.35rem);
@@ -1925,10 +1927,10 @@ h5 {
   letter-spacing: 0.08em;
 }
 
-.blog-article-hero h1 {
+.blog-article-hero h3 {
   max-width: 60rem;
   margin: 0;
-  font-size: clamp(2.8rem, 6.5vw, 5.9rem);
+  font-size: clamp(1.5rem, 6vw, 4rem);
   line-height: 0.98;
 }
 
@@ -2636,7 +2638,7 @@ h5 {
     gap: 0.5rem;
   }
 
-  .blog-article-hero h1 {
+  .blog-article-hero h3 {
     font-size: clamp(2.7rem, 13vw, 4.4rem);
   }
 
